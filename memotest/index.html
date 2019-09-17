@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+
+        tr {
+            height: 64px;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 64px;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="0" id="tblMain">
+        <tr>
+            <td>
+                <img id="1x1" src="imagen1.png" style="display: none"/>
+            </td>
+            <td>
+                <img id="1x2" src="imagen2.png" style="display: none"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img id="2x1" src="imagen2.png" style="display: none"/>
+            </td>
+            <td>
+                <img id="2x2" src="imagen1.png" style="display: none"/>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="limpiar()">Empezar de nuevo</button>
+</body>
+
+</html>
