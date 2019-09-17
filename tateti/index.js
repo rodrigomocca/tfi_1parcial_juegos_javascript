@@ -24,18 +24,6 @@ window.onload = function () {
         ["1x3", "2x2", "3x1"]
     ];
 
-    // this.document.getElementById("x").onclick = function () {
-    //     console.log("Eligio la letra X");
-    //     document.getElementById("seleccionado").innerText = "X";
-    // };
-
-    // this.document.getElementById("o").onclick = function () {
-    //     console.log("Eligio la letra O");
-    //     document.getElementById("seleccionado").innerText = "O";
-    // }
-
-
-
     var tbl = document.getElementById("tblMain");
     if (tbl != null) {
         for (i = 0; i < tbl.rows.length; i++) {
@@ -47,19 +35,7 @@ window.onload = function () {
         }
     }
 
-    // if (tbl != null) {
-    //     for (var i = 0; i < tbl.rows.length; i++) {
-    //         for (var j = 0; j < tbl.rows[i].cells.length; j++)
-    //             tbl.rows[i].cells[j].onclick = function () { getval(this); };
-    //     }
-    // }
-
     function getval(cel) {
-        // if (document.getElementById("seleccionado").innerText != "") {
-        //     cel.innerText = document.getElementById("seleccionado").innerText;
-
-        //     evaluarGanador();
-        // }
         cel.innerText = letra;
         letra = letra == "X" ? "O" : "X";
 
